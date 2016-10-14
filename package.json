@@ -7,7 +7,8 @@
     "src/"
   ],
   "scripts": {
-    "test": "tap test/**/*.test.js | tap-spec"
+    "test": "tap test/**/*.test.js --coverage | tap-spec",
+    "posttest": "node_modules/.bin/tap --coverage-report=lcov && node_modules/.bin/codecov"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "open"
   ],
   "devDependencies": {
+    "codecov": "^1.0.1",
     "tap": "^7.1.2",
     "tap-spec": "^4.1.1"
   }
