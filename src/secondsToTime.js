@@ -13,9 +13,9 @@ module.exports = function (sec) {
     throw new Error('Invalid type: expected number');
   }
 
-  const seconds = (sec % 60).toFixed(3);
-  const minutes = Math.floor(sec / 60) % 60;
-  const hours = Math.floor(sec / 60 / 60);
+  var seconds = (sec % 60).toFixed(3);
+  var minutes = Math.floor(sec / 60) % 60;
+  var hours = Math.floor(sec / 60 / 60);
 
   return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
 };

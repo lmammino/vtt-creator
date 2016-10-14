@@ -3,10 +3,10 @@
 var tap = require('tap');
 var secondsToTime = require('../src/secondsToTime');
 
-['someString', {someObject: 'someValue'}, ['foo', 'bar'], null, undefined].forEach(input => {
-  tap.test('It only accepts numbers (not ' + typeof input + ') as input', t => {
+['someString', {someObject: 'someValue'}, ['foo', 'bar'], null, undefined].forEach(function (input) {
+  tap.test('It only accepts numbers (not ' + typeof input + ') as input', function (t) {
     t.plan(1);
-    t.throws(() => {
+    t.throws(function () {
       secondsToTime(input);
     });
   });
@@ -21,8 +21,8 @@ var dataProvider = [
   {name: 'weeks', input: (60 * 60 * 24 * 7) + 1.2341, expectedOutput: '168:00:01.234'}
 ];
 
-dataProvider.forEach(testData => {
-  tap.test('Converts seconds to timestamps [' + testData.name + ']', t => {
+dataProvider.forEach(function (testData) {
+  tap.test('Converts seconds to timestamps [' + testData.name + ']', function (t) {
     t.plan(1);
     t.equals(secondsToTime(testData.input), testData.expectedOutput, testData.input + ' => ' + testData.expectedOutput);
   });

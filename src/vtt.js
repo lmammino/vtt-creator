@@ -9,7 +9,7 @@ module.exports = function () {
     lines = lines.constructor === Array ? lines : [lines];
 
     content += '\n' + secondsToTime(from) + ' --> ' + secondsToTime(to) + '\n\n';
-    lines.forEach(line => {
+    lines.forEach(function (line) {
       content += line + '\n';
     });
     content += '\n';
