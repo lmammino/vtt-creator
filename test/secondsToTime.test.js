@@ -1,7 +1,7 @@
 'use strict';
 
-const tap = require('tap');
-const secondsToTime = require('../src/secondsToTime');
+var tap = require('tap');
+var secondsToTime = require('../src/secondsToTime');
 
 ['someString', {someObject: 'someValue'}, ['foo', 'bar'], null, undefined].forEach(input => {
   tap.test('It only accepts numbers (not ' + typeof input + ') as input', t => {
@@ -12,7 +12,7 @@ const secondsToTime = require('../src/secondsToTime');
   });
 });
 
-const dataProvider = [
+var dataProvider = [
   {name: 'milliseconds', input: 0.2534567, expectedOutput: '00:00:00.253'},
   {name: 'seconds', input: 59.2534567, expectedOutput: '00:00:59.253'},
   {name: 'minutes', input: 90.2541245, expectedOutput: '00:01:30.254'},
