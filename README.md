@@ -1,6 +1,10 @@
 # vtt-creator
 
-Very basic Node.js/JavaScript library to generate VTT open subtitles files
+[![npm version](https://badge.fury.io/js/vtt-creator.svg)](http://badge.fury.io/js/vtt-creator)
+[![Build Status](https://travis-ci.org/lmammino/vtt-creator.svg?branch=master)](https://travis-ci.org/lmammino/vtt-creator)
+[![codecov.io](https://codecov.io/gh/lmammino/vtt-creator/coverage.svg?branch=master)](https://codecov.io/gh/lmammino/vtt-creator)
+
+Very basic and experimental Node.js/JavaScript library to generate VTT open subtitles files
 
 
 ## Install
