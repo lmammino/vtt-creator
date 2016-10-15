@@ -9,25 +9,45 @@ Very basic and experimental Node.js/JavaScript library to generate VTT open subt
 
 ## Install
 
+With NPM:
+
 ```bash
 npm install --save vtt-creator
 ```
 
+or with Bower:
+
+With NPM:
+
+```bash
+bower install --save vtt-creator
+```
+
 ## Example
 
-The following code:
+To include Vtt in your Node.js project simply use:
 
 ```javascript
-var vtt = require('vtt-creator');
+var Vtt = require('vtt-creator');
+```
 
-var v = new vtt();
+or in a fronted app using bower (`Vtt` will be available as a global instance):
+
+```html
+<script src="bower_components/vtt-creator/dist/vtt.min.js"></script>
+```
+
+Usage:
+
+```javascript
+var v = new Vtt();
 v.add(1, 4, 'Never drink liquid nitrogen.');
 v.add(5, 9, ['It will perforate your stomach.', 'You could die.']);
 
 console.log(v.toString());
 ```
 
-Will generate:
+the previous snippet will generate:
 
 ```plain
 WEBVTT

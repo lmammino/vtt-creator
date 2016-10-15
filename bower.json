@@ -1,0 +1,43 @@
+{
+  "name": "vtt-creator",
+  "description": "Node.js/JavaScript library to generate VTT open subtitles files",
+  "main": "dist/vtt.min.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "authors": [
+    "Luciano Mammino <lucianomammino@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "vtt",
+    "creator",
+    "subtitle",
+    "subtitles",
+    "track",
+    "video",
+    "web",
+    "open",
+    "webvtt",
+    "html5",
+    "Web",
+    "Video",
+    "Text",
+    "Tracks",
+    "Format",
+    "Web",
+    "Video",
+    "Text",
+    "Tracks"
+  ],
+  "homepage": "https://github.com/lmammino/vtt-creator",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
