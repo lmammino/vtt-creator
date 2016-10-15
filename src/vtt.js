@@ -4,15 +4,15 @@ var secondsToTime = require('./secondsToTime');
 
 module.exports = function () {
   var counter = 0;
-  var content = 'WEBVTT\n';
+  var content = 'WEBVTT\r\n';
 
   this.add = function (from, to, lines) {
     ++counter;
     lines = lines.constructor === Array ? lines : [lines];
 
-    content += '\n' + counter + '\n' + secondsToTime(from) + ' --> ' + secondsToTime(to) + '\n';
+    content += '\r\n' + counter + '\r\n' + secondsToTime(from) + ' --> ' + secondsToTime(to) + '\r\n';
     lines.forEach(function (line) {
-      content += line + '\n';
+      content += line + '\r\n';
     });
   };
 
