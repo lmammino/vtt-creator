@@ -1,2 +1,2 @@
-test/fixtures.*.vtt eol=crlf
+test/fixtures/*.vtt eol=crlf
 
