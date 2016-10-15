@@ -8,7 +8,7 @@ var isProd = process.env.NODE_ENV === 'production';
 module.exports = {
   debug: !isProd,
   devtool: isProd? false : 'source-map',
-  context: path.join(__dirname, 'src'),
+  context: path.join(__dirname),
   entry: "./global",
   output: {
     path: path.join(__dirname, 'dist'),

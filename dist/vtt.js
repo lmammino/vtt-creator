@@ -46,7 +46,9 @@
 
 	'use strict';
 	
-	window.Vtt = __webpack_require__(1);
+	if (typeof window !== 'undefined') {
+	  window.Vtt = __webpack_require__(1);
+	}
 
 
 /***/ },
