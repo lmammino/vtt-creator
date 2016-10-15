@@ -1,6 +1,6 @@
 {
   "name": "vtt-creator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js/JavaScript library to generate VTT open subtitles files",
   "main": "src/vtt.js",
   "files": [
@@ -36,7 +36,11 @@
     "track",
     "video",
     "web",
-    "open"
+    "open",
+    "webvtt",
+    "html5",
+    "Web Video Text Tracks Format",
+    "Web Video Text Tracks"
   ],
   "devDependencies": {
     "babel-eslint": "^7.0.0",

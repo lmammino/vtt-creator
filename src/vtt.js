@@ -3,16 +3,17 @@
 var secondsToTime = require('./secondsToTime');
 
 module.exports = function () {
-  var content = 'WEBVTT\n\n';
+  var counter = 0;
+  var content = 'WEBVTT\n';
 
   this.add = function (from, to, lines) {
+    ++counter;
     lines = lines.constructor === Array ? lines : [lines];
 
-    content += '\n' + secondsToTime(from) + ' --> ' + secondsToTime(to) + '\n\n';
+    content += '\n' + counter + '\n' + secondsToTime(from) + ' --> ' + secondsToTime(to) + '\n';
     lines.forEach(function (line) {
       content += line + '\n';
     });
-    content += '\n';
   };
 
   this.toString = function () {
