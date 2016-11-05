@@ -1,10 +1,10 @@
 'use strict';
 
-var tap = require('tap');
+var test = require('tap').test;
 var secondsToTime = require('../src/secondsToTime');
 
 ['someString', {someObject: 'someValue'}, ['foo', 'bar'], null, undefined].forEach(function (input) {
-  tap.test('It only accepts numbers (not ' + typeof input + ') as input', function (t) {
+  test('It only accepts numbers (not ' + typeof input + ') as input', function (t) {
     t.plan(1);
     t.throws(function () {
       secondsToTime(input);
@@ -22,8 +22,13 @@ var dataProvider = [
 ];
 
 dataProvider.forEach(function (testData) {
-  tap.test('Converts seconds to timestamps [' + testData.name + ']', function (t) {
+  test('Converts seconds to timestamps [' + testData.name + ']', function (t) {
     t.plan(1);
     t.equals(secondsToTime(testData.input), testData.expectedOutput, testData.input + ' => ' + testData.expectedOutput);
   });
+});
+
+test('It must properly pad timestamps containing number 9 (regression)', function (t) {
+  t.plan(1);
+  t.equals(secondsToTime(9.026), '00:00:09.026');
 });

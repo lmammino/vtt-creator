@@ -1,7 +1,7 @@
 'use strict';
 
 function pad(num) {
-  if (num <= 9) {
+  if (num < 10) {
     return '0' + num;
   }
 
