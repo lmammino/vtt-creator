@@ -67,7 +67,7 @@ You could die.
 
 Everyone is very welcome to contribute to this project.
 You can contribute just by submitting bugs or suggesting improvements by
-[opening an issue on GitHub](https://github.com/lmammino/wtt-creator/issues).
+[opening an issue on GitHub](https://github.com/lmammino/vtt-creator/issues).
 
 
 ## License
