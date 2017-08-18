@@ -41,7 +41,7 @@ Usage:
 
 ```javascript
 var v = new Vtt();
-v.add(1, 4, 'Never drink liquid nitrogen.');
+v.add(1.05, 4, 'Never drink liquid nitrogen.', 'align:middle line:84%');
 v.add(5, 9, ['It will perforate your stomach.', 'You could die.']);
 
 console.log(v.toString());
@@ -53,7 +53,7 @@ the previous snippet will generate:
 WEBVTT
 
 1
-00:00:01.000 --> 00:00:04.000
+00:00:01.050 --> 00:00:04.000 align:middle line:84%
 Never drink liquid nitrogen.
 
 2
