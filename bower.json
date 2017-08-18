@@ -1,6 +1,6 @@
 {
   "name": "vtt-creator",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Node.js/JavaScript library to generate VTT open subtitles files",
   "main": "dist/vtt.js",
   "moduleType": [
